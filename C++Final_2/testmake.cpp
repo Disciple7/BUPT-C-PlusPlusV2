@@ -79,7 +79,7 @@ void flush_tester(int nowUserPos, int wordAdd, vector<tester>& testerList)
 		if (tmpInfoList[0] == nowtester.get_name())
 		{
 			testerFile.seekp(tmpFptr);
-			testerFile << nowtester.get_name() << "," << nowtester.get_password() << "," << nowtester.get_level() << "," << nowtester.get_problem_num();
+			testerFile << "\n" << nowtester.get_name() << "," << nowtester.get_password() << "," << nowtester.get_level() << "," << nowtester.get_problem_num();
 			break;
 		}
 		tmpInfoList.clear();
